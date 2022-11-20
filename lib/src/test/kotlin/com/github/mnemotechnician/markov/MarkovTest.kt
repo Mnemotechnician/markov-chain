@@ -26,7 +26,7 @@ class MarkovTest {
 	}
 
 	@Test
-	fun `check the time required tp train a chain`() {
+	fun `check the time required to train a chain`() {
 		print(measureTimeMillis {
 			MarkovChain().train(dataset)
 		})
