@@ -7,6 +7,14 @@ based on the connections between words it's learnt during the training.
 
 The chain can be serialized (saved) and then deserialized (loaded) without any losses.
 
+# Structure
+There are two subprojecta:
+
+* **lib** - the library itself
+* **examples** - currently contains one example project using the chain.
+	The example downloads N random extracts from Wikipedia™, trains a markov
+	chain on them and then generates random phrases.
+
 # But why?
 Well... I was just sitting and minding my own buisiness when my brain suddenly thought:
 "i must create a markov chain and use it in my discord bot"! And now here i am,
