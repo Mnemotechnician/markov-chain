@@ -1,5 +1,5 @@
 plugins {
-	id("org.jetbrains.kotlin.jvm") version "1.7.21"
+	kotlin("jvm")
 	kotlin("plugin.serialization") version "1.7.21"
 	application
 }
@@ -11,7 +11,7 @@ repositories {
 dependencies {
 	//compileOnly(kotlin("stdlib-jdk8"))
 
-	implementation(project(":lib"))
+	implementation(project(":core"))
 	
 	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
 	implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1")

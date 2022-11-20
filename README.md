@@ -10,7 +10,7 @@ The chain can be serialized (saved) and then deserialized (loaded) without any l
 # Structure
 There are two subprojecta:
 
-* **lib** - the library itself
+* **core** - the library itself
 * **examples** - currently contains one example project using the chain.
 	The example downloads N random extracts from Wikipedia™, trains a markov
 	chain on them and then generates random phrases.
