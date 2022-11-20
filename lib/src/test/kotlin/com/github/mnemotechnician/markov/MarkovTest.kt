@@ -14,7 +14,7 @@ class MarkovTest {
 	)
 
 	@Test
-	fun `test training the chain with a normal dataset`() {
+	fun `a trained chain must produce expected results`() {
 		val chain = MarkovChain()
 
 		chain.train("Hello world!", "Today is monday.", "World is beautiful!", "Hello, death, my old friend.")
@@ -26,7 +26,7 @@ class MarkovTest {
 	}
 
 	@Test
-	fun `test how much time is required to train a chain`() {
+	fun `check the time required tp train a chain`() {
 		print(measureTimeMillis {
 			MarkovChain().train(dataset)
 		})
@@ -34,7 +34,7 @@ class MarkovTest {
 	}
 
 	@Test
-	fun `test using the same random seed produces the same results`() {
+	fun `using the same random seed must produce the same results`() {
 		val random1 = Random(1L)
 		val random2 = Random(1L)
 
@@ -50,7 +50,7 @@ class MarkovTest {
 	}
 
 	@Test
-	fun `test a chain can be serialized and deserialized without any losses`() {
+	fun `a chain must retain its graph after being serialized and deserialized`() {
 		val chain = MarkovChain().also { it.train(dataset) }
 
 		val serialized = chain.serializeToString()
