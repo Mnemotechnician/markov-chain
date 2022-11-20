@@ -1,2 +1,2 @@
 rootProject.name = "markov-chain"
-include("lib")
+include("lib", "examples:wikipedia-extracts")
