@@ -51,3 +51,9 @@ tasks.test {
 	outputs.upToDateWhen { false }
 	testLogging.showStandardStreams = true
 }
+
+tasks.compileKotlin {
+	kotlinOptions.apply {
+		jvmTarget = "11"
+	}
+}
