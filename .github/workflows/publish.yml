@@ -3,7 +3,7 @@ name: Publish
 on:
   workflow_dispatch:
     inputs:
-      amogi:
+      version:
         description: 'version'
         required: true
 
